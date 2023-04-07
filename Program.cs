@@ -11,6 +11,14 @@
 //         limit: 3);
 
 // var result = new Solution2405().PartitionString("abacaba");
-var result = new Solution2405().PartitionString("ssssss");
+// var result = new Solution2405().PartitionString("ssssss");
+
+// var result = new Solution2439().MinimizeArrayValue(new int[] { 3, 7, 1, 6 });
+// var result = new Solution2439().MinimizeArrayValue(new int[] { 13,13,20,0,8,9,9 });
+
+// var grid = new int[,] { {1,1,1,1,1,1,1,0},{1,0,0,0,0,1,1,0},{1,0,1,0,1,1,1,0},{1,0,0,0,0,1,0,1},{1,1,1,1,1,1,1,0}};
+// var grid = new int[,] {{0,0,1,0,0},{0,1,0,1,0},{0,1,1,1,0}};
+var grid = new int[,] {{0,0,1,1,0,1,0,0,1,0},{1,1,0,1,1,0,1,1,1,0},{1,0,1,1,1,0,0,1,1,0},{0,1,1,0,0,0,0,1,0,1},{0,0,0,0,0,0,1,1,1,0},{0,1,0,1,0,1,0,1,1,1},{1,0,1,0,1,1,0,0,0,1},{1,1,1,1,1,1,0,0,0,0},{1,1,1,0,0,1,0,1,0,1},{1,1,1,0,1,1,0,1,1,0}};
+var result = new Solution1254().ClosedIsland(grid.ToJagged());
 
 Printer.Print(result);
