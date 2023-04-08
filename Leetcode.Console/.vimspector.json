@@ -5,7 +5,7 @@
       "filetypes": [ "cs", "fsharp", "vbnet" ], // optional
       "configuration": {
         "request": "launch",
-        "program": "${workspaceRoot}/bin/Debug/net6.0/Leetcode.dll",
+        "program": "${workspaceRoot}/bin/Debug/net6.0/Leetcode.Console.dll",
         "args": [],
         "stopAtEntry": true,
         "cwd": "${workspaceRoot}",
