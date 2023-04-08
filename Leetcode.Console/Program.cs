@@ -21,6 +21,10 @@
 // var grid = new int[,] {{0,0,1,1,0,1,0,0,1,0},{1,1,0,1,1,0,1,1,1,0},{1,0,1,1,1,0,0,1,1,0},{0,1,1,0,0,0,0,1,0,1},{0,0,0,0,0,0,1,1,1,0},{0,1,0,1,0,1,0,1,1,1},{1,0,1,0,1,1,0,0,0,1},{1,1,1,1,1,1,0,0,0,0},{1,1,1,0,0,1,0,1,0,1},{1,1,1,0,1,1,0,1,1,0}};
 // var result = new Solution1254().ClosedIsland(grid.ToJagged());
 
-var grid = new int[,] {{0,0,0,0},{1,0,1,0},{0,1,1,0},{0,0,0,0}};
-int result = new Solution1020().NumEnclaves(grid.ToJagged());
+// var grid = new int[,] {{0,0,0,0},{1,0,1,0},{0,1,1,0},{0,0,0,0}};
+// int result = new Solution1020().NumEnclaves(grid.ToJagged());
+
+var adjArray = new int[,] {{2,4}, {1,3}, {2,4}, {1,3}}.ToJagged();
+var node = GraphBuilder.Create(adjArray);
+var result = new Solution133().CloneGraph(node);
 Printer.Print(result);
