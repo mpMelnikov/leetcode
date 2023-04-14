@@ -27,5 +27,9 @@
 // var adjArray = new int[,] {{2,4}, {1,3}, {2,4}, {1,3}}.ToJagged();
 // var node = GraphBuilder.Create(adjArray);
 // var result = new Solution133().CloneGraph(node);
-var result = new Solution2390().RemoveStars("leet**cod*e");
+
+// var result = new Solution2390().RemoveStars("leet**cod*e");
+
+var result = new Solution516().LongestPalindromeSubseq("bbbab");
+
 Printer.Print(result);
